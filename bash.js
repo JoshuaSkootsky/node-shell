@@ -1,3 +1,7 @@
+const { pwd } = require('./pwd.js');
+
+
+
 // output a prompt
 process.stdout.write('prompt > ');
 
@@ -6,7 +10,7 @@ process.stdin.on('data', data => {
   const cmd = data.toString().trim(); // remove newLine and other whitespace
 
   if (cmd === 'pwd') {
-    process.stdout.write('You printed: ' + process.cwd());
+    pwd();
   } else {
     process.stdout.write('You typed: ' + cmd);
   }
