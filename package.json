@@ -4,7 +4,8 @@
   "description": "Emulate Shell in Node.js",
   "main": "bash.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "npx nodemon bash.js"
   },
   "repository": {
     "type": "git",
