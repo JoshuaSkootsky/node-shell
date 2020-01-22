@@ -1,8 +1,6 @@
 // pwd.js
 
-const pwd = function pwd() {
-  process.stdout.write('You printed: ' + process.cwd());
+module.exports = function pwd() {
+  process.stdout.write(process.cwd());
   process.stdout.write('\nprompt > ');
-}
-
-module.exports = { pwd };
+};

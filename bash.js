@@ -1,5 +1,5 @@
-const {pwd} = require('./pwd.js');
-const {ls} = require('./ls.js');
+const pwd = require('./pwd.js');
+const ls = require('./ls.js');
 
 // output a prompt
 process.stdout.write('prompt > ');
